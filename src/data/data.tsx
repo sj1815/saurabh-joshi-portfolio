@@ -48,7 +48,7 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
+  Hero: 'Main',
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
@@ -92,8 +92,8 @@ export const aboutData: About = {
   description: `Hi, I am Saurabh Joshi and I work as a Software Engineer at Kargo Global Inc., developing high-performance advertising solutions for mobile, desktop, and CTV.
     I started my career in Quality Assurance (QA), where I built automated testing solutions and ensured system reliability. 
     Over time, I transitioned into software engineering, contributing to backend development, large-scale system optimizations, and ad tech integrations.
-    My experience includes working with real-time bidding (RTB), header bidding, OpenRTB, and Prebid, as well as optimizing bidding strategies and maintaining integrations with publishers and DSPs.
-    I hold an M.S. in Information Sciences & Technologies from RIT and a B.E. in IT from Mumbai University. Outside of work, I enjoy hiking, cooking vegetarian food, learning guitar, and exploring new technologies.`,
+    My experience includes working with real-time bidding (RTB), header bidding, OpenRTB, and Prebid, as well as optimizing bidding strategies and maintaining integrations with publishers and DSPs.`,
+  description2: `I hold an M.S. in Information Sciences & Technologies from RIT and a B.E. in IT from Mumbai University. I have been living in Northeast USA for almost a decade now, but Mumbai, India is still the city I call home. Outside of work, I enjoy hiking, cooking vegetarian food, learning guitar, and exploring new technologies.`,
   aboutItems: [
     {label: 'Based in', text: 'Jersey City, NJ, USA', Icon: MapPinIcon},
     {label: 'From', text: 'Mumbai, MH, India', Icon: HomeModernIcon},
@@ -253,24 +253,30 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2017 - Dec 2019',
+    location: 'Masters in Information Sciences and Technology',
+    title: 'Rochester Institute of Technology, USA',
+    content: <p></p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2013 - August 2016',
+    location: 'B.E in Information Technology',
+    title: 'Mumbai University, India',
+    content: <p></p>,
+  },
+  {
+    date: 'August 2010 - June 2013',
+    location: 'Diploma in Computer Technology',
+    title: 'Maharashra State Board, India',
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'February 2024 - Present',
+    location: 'Kargo Global Inc.',
+    title: 'Associate Software Engineer 1',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
@@ -279,16 +285,16 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'March 2020 - February 2024',
+    location: 'Kargo Global Inc.',
+    title: 'Associate Software Engineer in Test',
     content: (
       <p>
         Describe work, special projects, notable achievements, what technologies you have been working with, and
         anything else that would be useful for an employer to know.
       </p>
     ),
-  },
+  }
 ];
 
 /**
