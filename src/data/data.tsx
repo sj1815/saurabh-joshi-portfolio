@@ -2,17 +2,13 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
-  SparklesIcon,
+  HomeModernIcon,
+  MapPinIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+import logopic from '../images/saurabhlogo.png'
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -44,15 +40,15 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Saurabh Joshi Portfolio',
+  description: "This is portfolio page by Saurabh Joshi",
 };
 
 /**
  * Section definition
  */
 export const SectionId = {
-  Hero: 'hero',
+  Hero: 'Main',
   About: 'about',
   Contact: 'contact',
   Portfolio: 'portfolio',
@@ -70,9 +66,10 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Saurabh Joshi`,
+  logo: logopic,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-stone-200 sm:prose-base font-bold lg:prose-xl">
       Experienced Software Engineer working in AdTech, building high-performance, scalable and real-time bidding solutions for digital advertising.
       </p>
     </>
@@ -83,12 +80,7 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    },
-    {
-      href: `#${SectionId.Contact}`,
-      text: 'Contact',
-      primary: false,
-    },
+    }
   ],
 };
 
@@ -97,16 +89,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Hi, I am Saurabh Joshi and I work as a Software Engineer at Kargo Global Inc., developing high-performance advertising solutions for mobile, desktop, and CTV.
+    I started my career in Quality Assurance (QA), where I built automated testing solutions and ensured system reliability. 
+    Over time, I transitioned into software engineering, contributing to backend development, large-scale system optimizations, and ad tech integrations.
+    My experience includes working with real-time bidding (RTB), header bidding, OpenRTB, and Prebid, as well as optimizing bidding strategies and maintaining integrations with publishers and DSPs.`,
+  description2: `I hold an M.S. in Information Sciences & Technologies from RIT and a B.E. in IT from Mumbai University. I have been living in Northeast USA for almost a decade now, but Mumbai, India is still the city I call home. Outside of work, I enjoy hiking, cooking vegetarian food, learning guitar, and exploring new technologies.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Based in', text: 'Jersey City, NJ, USA', Icon: MapPinIcon},
+    {label: 'From', text: 'Mumbai, MH, India', Icon: HomeModernIcon},
+    {label: 'Studied at', text: 'R.I.T & Mumbai University', Icon: AcademicCapIcon},
+    {label: 'Work', text: 'Kargo Global Inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -261,42 +253,48 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2017 - Dec 2019',
+    location: 'Masters in Information Sciences and Technology',
+    title: 'Rochester Institute of Technology, USA',
+    content: <p></p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2013 - August 2016',
+    location: 'B.E in Information Technology',
+    title: 'Mumbai University, India',
+    content: <p></p>,
+  },
+  {
+    date: 'August 2010 - June 2013',
+    location: 'Diploma in Computer Technology',
+    title: 'Maharashra State Board, India',
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'February 2024 - Present',
+    location: 'Kargo Global Inc.',
+    title: 'Associate Software Engineer 1',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Developing and optimizing Kargo’s large-scale ad-serving platform, integrating CTV solutions, and enhancing bidding strategies.
+        Tech stack includes Golang, Kubernetes, AWS and Aerospike.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'March 2020 - February 2024',
+    location: 'Kargo Global Inc.',
+    title: 'Associate Software Engineer in Test',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Built automated testing solutions and ensured the scalability of Kargo’s SSP, contributing to revenue growth and cost savings while leading QA efforts across ad-serving and data teams.
+        Worked on Snowflake, AWS kinesis and S3, Javascript and Cypress.
       </p>
     ),
-  },
+  }
 ];
 
 /**
@@ -358,9 +356,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sj1815'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/saurabhvjjoshi/'},
 ];
