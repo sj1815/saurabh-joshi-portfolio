@@ -279,8 +279,8 @@ export const experience: TimelineItem[] = [
     title: 'Associate Software Engineer 1',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Developing and optimizing Kargo’s large-scale ad-serving platform, integrating CTV solutions, and enhancing bidding strategies.
+        Tech stack includes Golang, Kubernetes, AWS and Aerospike.
       </p>
     ),
   },
@@ -290,8 +290,8 @@ export const experience: TimelineItem[] = [
     title: 'Associate Software Engineer in Test',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Built automated testing solutions and ensured the scalability of Kargo’s SSP, contributing to revenue growth and cost savings while leading QA efforts across ad-serving and data teams.
+        Worked on Snowflake, AWS kinesis and S3, Javascript and Cypress.
       </p>
     ),
   }
