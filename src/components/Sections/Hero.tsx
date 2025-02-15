@@ -50,9 +50,9 @@ const Hero: FC = memo(() => {
         </div>
         <div className="absolute inset-x-0 bottom-6 flex justify-center">
           <a
-            className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
+            className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 transition-all duration-200 hover:shadow-lg hover:scale-110 focus:outline-none focus:ring-2 sm:p-2"
             href={`/#${SectionId.About}`}>
-            <ChevronDownIcon className="h-5 w-5 bg-transparent sm:h-6 sm:w-6" />
+           <ChevronDownIcon className="h-5 w-5 bg-transparent sm:h-6 sm:w-6" />
           </a>
         </div>
       </div>

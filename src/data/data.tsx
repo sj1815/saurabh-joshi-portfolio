@@ -2,10 +2,8 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
-  FlagIcon,
-  MapIcon,
-  SparklesIcon,
+  HomeModernIcon,
+  MapPinIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
@@ -91,16 +89,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Hi, I am Saurabh Joshi and I work as a Software Engineer at Kargo Global Inc., developing high-performance advertising solutions for mobile, desktop, and CTV.
+    I started my career in Quality Assurance (QA), where I built automated testing solutions and ensured system reliability. 
+    Over time, I transitioned into software engineering, contributing to backend development, large-scale system optimizations, and ad tech integrations.
+    My experience includes working with real-time bidding (RTB), header bidding, OpenRTB, and Prebid, as well as optimizing bidding strategies and maintaining integrations with publishers and DSPs.
+    I hold an M.S. in Information Sciences & Technologies from RIT and a B.E. in IT from Mumbai University. Outside of work, I enjoy hiking, cooking vegetarian food, learning guitar, and exploring new technologies.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Based in', text: 'Jersey City, NJ, USA', Icon: MapPinIcon},
+    {label: 'From', text: 'Mumbai, MH, India', Icon: HomeModernIcon},
+    {label: 'Studied at', text: 'R.I.T & Mumbai University', Icon: AcademicCapIcon},
+    {label: 'Work', text: 'Kargo Global Inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
