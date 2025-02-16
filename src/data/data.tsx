@@ -20,9 +20,8 @@ import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import skillsImage from '../images/skills-background.webp';
 import {
   About,
   ContactSection,
@@ -31,6 +30,7 @@ import {
   HomepageMeta,
   PortfolioItem,
   SkillGroup,
+  Skillset,
   Social,
   TestimonialSection,
   TimelineItem,
@@ -48,12 +48,12 @@ export const homePageMeta: HomepageMeta = {
  * Section definition
  */
 export const SectionId = {
-  Hero: 'Main',
+  Hero: 'main',
   About: 'about',
   Contact: 'contact',
-  Portfolio: 'portfolio',
+  Portfolio: 'projects',
   Resume: 'resume',
-  Skills: 'skills',
+  Skillset: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
 } as const;
@@ -101,6 +101,15 @@ export const aboutData: About = {
     {label: 'Work', text: 'Kargo Global Inc.', Icon: BuildingOffice2Icon},
   ],
 };
+
+/**
+ * skillset section
+ */
+
+export const skilldata: Skillset = {
+  skillBackgroundPic: skillsImage
+};
+
 
 /**
  * Skills section
@@ -181,70 +190,64 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'RESTful API Client for Emergency Service Directory',
+    description: 'Designed and developed using module pattern, a Web portal for emergency services with User Interface.',
+    url: 'https://github.com/sj1815/RESTful-API-Client-for-Emergency-Service-Directory',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Enhanced RTO Driving License System',
+    description: 'A prototype system which can work on any touchscreen mobile device containing NFC by law enforcement officer.',
+    url: 'https://github.com/sj1815/RTO_Automation',
     image: porfolioImage2,
   },
   {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Tweets Search Application',
+    description: 'Simple application to search tweets using MongoDB and Node.js. Based on the user query the application creates a list on the Frontend.',
+    url: 'https://github.com/sj1815/MongoDb-Tweet-Search-Tool',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Weather Application using React.js',
+    description: 'Single page weather application with React.js and Open Weather Map API. Provides latest weather updates of various cities worldwide.',
+    url: 'https://github.com/sj1815/React-Weather-APP',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Fake News Data Analysis',
+    description: 'Creation of data models such as linear regression to get meaningful analysis on data on fake news.',
+    url: 'https://github.com/sj1815/Fake-news-Analysis',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Performance Appraisal System',
+    description: 'Designed and developed an appraisal system for a diploma college where students can confidentially appraise professors’ performance.',
+    url: 'https://github.com/sj1815',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Soccer Dream Team Web Application',
+    description: 'Vanilla JavaScript application exhibiting the dynamically created dropdown menu after selecting each choice to create a futsal team.',
+    url: 'https://github.com/sj1815/Javascript-Soccer-Dream-team',
     image: porfolioImage7,
   },
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Data Warehouse Creation',
+    description: 'Data warehouse project where data from different company divisions was cleaned, transformed, and loaded using ETL tools.',
+    url: 'https://github.com/sj1815/Data-Warehouse',
     image: porfolioImage8,
   },
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'California Fire Arc-GIS Mapping',
+    description: 'GIS-based analysis of forest fires in California, creating maps to understand threats and mitigation options.',
+    url: 'https://github.com/sj1815/Arc-GIS-California-Fire',
     image: porfolioImage9,
   },
   {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'RESTful API Client for Emergency Service Directory',
+    description: 'A Web portal for emergency services with User Interface.',
+    url: 'https://github.com/sj1815/RESTful-API-Client-for-Emergency-Service-Directory',
     image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
   },
 ];
 
@@ -301,7 +304,7 @@ export const experience: TimelineItem[] = [
  * Testimonial section
  */
 export const testimonial: TestimonialSection = {
-  imageSrc: testimonialImage,
+  // imageSrc: testimonialImage,
   testimonials: [
     {
       name: 'John Doe',
@@ -359,3 +362,5 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sj1815'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/saurabhvjjoshi/'},
 ];
+
+

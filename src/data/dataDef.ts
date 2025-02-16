@@ -76,6 +76,14 @@ export interface SkillGroup {
 }
 
 /**
+ * Skills section
+ */
+
+export interface Skillset {
+  skillBackgroundPic: string;
+}
+
+/**
  * Portfolio section
  */
 export interface PortfolioItem {
