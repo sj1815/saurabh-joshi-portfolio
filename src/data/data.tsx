@@ -76,7 +76,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/SaurabhJoshi_Resume.pdf',
+      href: '/assets/Resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
