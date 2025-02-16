@@ -7,8 +7,8 @@ import About from '../components/Sections/About';
 import Footer from '../components/Sections/Footer';
 import Hero from '../components/Sections/Hero';
 import Portfolio from '../components/Sections/Portfolio';
-import Skillset from '../components/Sections/Skillset';
 import Resume from '../components/Sections/Resume';
+import Skillset from '../components/Sections/Skillset';
 import {homePageMeta} from '../data/data';
 
 // eslint-disable-next-line react-memo/require-memo
@@ -22,7 +22,7 @@ const Home: FC = memo(() => {
       <Hero />
       <About />
       <Resume />
-      <Skillset/>
+      <Skillset />
       <Portfolio />
       {/* <Contact /> */}
       <Footer />

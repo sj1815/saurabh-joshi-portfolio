@@ -8,7 +8,6 @@ import {
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import logopic from '../images/saurabhlogo.png'
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -21,6 +20,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import profilepic from '../images/profilepic.jpg';
+import logopic from '../images/saurabhlogo.png';
 import skillsImage from '../images/skills-background.webp';
 import {
   About,
@@ -41,7 +41,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Saurabh Joshi Portfolio',
-  description: "This is portfolio page by Saurabh Joshi",
+  description: 'This is portfolio page by Saurabh Joshi',
 };
 
 /**
@@ -70,7 +70,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base font-bold lg:prose-xl">
-      Experienced Software Engineer working in AdTech, building high-performance, scalable and real-time bidding solutions for digital advertising.
+        Experienced Software Engineer working in AdTech, building high-performance, scalable and real-time bidding
+        solutions for digital advertising.
       </p>
     </>
   ),
@@ -80,7 +81,7 @@ export const heroData: Hero = {
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
-    }
+    },
   ],
 };
 
@@ -107,9 +108,8 @@ export const aboutData: About = {
  */
 
 export const skilldata: Skillset = {
-  skillBackgroundPic: skillsImage
+  skillBackgroundPic: skillsImage,
 };
-
 
 /**
  * Skills section
@@ -191,25 +191,29 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'RESTful API Client for Emergency Service Directory',
-    description: 'Designed and developed using module pattern, a Web portal for emergency services with User Interface.',
+    description:
+      'Designed and developed using module pattern, a Web portal for emergency services with User Interface.',
     url: 'https://github.com/sj1815/RESTful-API-Client-for-Emergency-Service-Directory',
     image: porfolioImage1,
   },
   {
     title: 'Enhanced RTO Driving License System',
-    description: 'A prototype system which can work on any touchscreen mobile device containing NFC by law enforcement officer.',
+    description:
+      'A prototype system which can work on any touchscreen mobile device containing NFC by law enforcement officer.',
     url: 'https://github.com/sj1815/RTO_Automation',
     image: porfolioImage2,
   },
   {
     title: 'Tweets Search Application',
-    description: 'Simple application to search tweets using MongoDB and Node.js. Based on the user query the application creates a list on the Frontend.',
+    description:
+      'Simple application to search tweets using MongoDB and Node.js. Based on the user query the application creates a list on the Frontend.',
     url: 'https://github.com/sj1815/MongoDb-Tweet-Search-Tool',
     image: porfolioImage3,
   },
   {
     title: 'Weather Application using React.js',
-    description: 'Single page weather application with React.js and Open Weather Map API. Provides latest weather updates of various cities worldwide.',
+    description:
+      'Single page weather application with React.js and Open Weather Map API. Provides latest weather updates of various cities worldwide.',
     url: 'https://github.com/sj1815/React-Weather-APP',
     image: porfolioImage4,
   },
@@ -221,25 +225,29 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     title: 'Performance Appraisal System',
-    description: 'Designed and developed an appraisal system for a diploma college where students can confidentially appraise professors’ performance.',
+    description:
+      'Designed and developed an appraisal system for a diploma college where students can confidentially appraise professors’ performance.',
     url: 'https://github.com/sj1815',
     image: porfolioImage6,
   },
   {
     title: 'Soccer Dream Team Web Application',
-    description: 'Vanilla JavaScript application exhibiting the dynamically created dropdown menu after selecting each choice to create a futsal team.',
+    description:
+      'Vanilla JavaScript application exhibiting the dynamically created dropdown menu after selecting each choice to create a futsal team.',
     url: 'https://github.com/sj1815/Javascript-Soccer-Dream-team',
     image: porfolioImage7,
   },
   {
     title: 'Data Warehouse Creation',
-    description: 'Data warehouse project where data from different company divisions was cleaned, transformed, and loaded using ETL tools.',
+    description:
+      'Data warehouse project where data from different company divisions was cleaned, transformed, and loaded using ETL tools.',
     url: 'https://github.com/sj1815/Data-Warehouse',
     image: porfolioImage8,
   },
   {
     title: 'California Fire Arc-GIS Mapping',
-    description: 'GIS-based analysis of forest fires in California, creating maps to understand threats and mitigation options.',
+    description:
+      'GIS-based analysis of forest fires in California, creating maps to understand threats and mitigation options.',
     url: 'https://github.com/sj1815/Arc-GIS-California-Fire',
     image: porfolioImage9,
   },
@@ -282,8 +290,8 @@ export const experience: TimelineItem[] = [
     title: 'Associate Software Engineer 1',
     content: (
       <p>
-        Developing and optimizing Kargo’s large-scale ad-serving platform, integrating CTV solutions, and enhancing bidding strategies.
-        Tech stack includes Golang, Kubernetes, AWS and Aerospike.
+        Developing and optimizing Kargo’s large-scale ad-serving platform, integrating CTV solutions, and enhancing
+        bidding strategies. Tech stack includes Golang, Kubernetes, AWS and Aerospike.
       </p>
     ),
   },
@@ -293,11 +301,12 @@ export const experience: TimelineItem[] = [
     title: 'Associate Software Engineer in Test',
     content: (
       <p>
-        Built automated testing solutions and ensured the scalability of Kargo’s SSP, contributing to revenue growth and cost savings while leading QA efforts across ad-serving and data teams.
-        Worked on Snowflake, AWS kinesis and S3, Javascript and Cypress.
+        Built automated testing solutions and ensured the scalability of Kargo’s SSP, contributing to revenue growth and
+        cost savings while leading QA efforts across ad-serving and data teams. Worked on Snowflake, AWS kinesis and S3,
+        Javascript and Cypress.
       </p>
     ),
-  }
+  },
 ];
 
 /**
@@ -362,5 +371,3 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/sj1815'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/saurabhvjjoshi/'},
 ];
-
-
