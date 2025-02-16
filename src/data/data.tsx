@@ -287,7 +287,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'February 2024 - Present',
     location: 'Kargo Global Inc.',
-    title: 'Associate Software Engineer 1',
+    title: 'Associate Software Engineer',
     content: (
       <p>
         Developing and optimizing Kargo’s large-scale ad-serving platform, integrating CTV solutions, and enhancing
