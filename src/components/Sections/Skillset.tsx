@@ -34,12 +34,11 @@ const skills = [
   { name: "RESTful APIs", icon: <FaCode size={40} className="text-white" /> },
 ];
 
-
 const Skillset: FC = memo(() => {
   const { skillBackgroundPic } = skilldata;
   return (
     <Section noPadding sectionId={SectionId.Skillset}>
-      <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden">
+      <div className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-4 py-16 sm:px-6 md:px-8">
         {/* Background Image */}
         <Image
           alt="skill-background-image"
@@ -50,9 +49,11 @@ const Skillset: FC = memo(() => {
         />
 
         {/* Content Wrapper */}
-        <div className="z-10 max-w-5xl w-full px-6 md:px-8 lg:px-0">
+        <div className="z-10 max-w-5xl w-full">
           <div className="container mx-auto text-center">
-            <h2 className="text-5xl font-bold text-white mb-8 shadow-lg drop-shadow-md">Skills</h2>
+            <h2 className="self-center text-2xl font-bold text-white mb-8 shadow-lg drop-shadow-md">
+              Skill and Technologies
+            </h2>
             {/* Skills Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center">
               {skills.map((skill, index) => (
@@ -74,7 +75,6 @@ const Skillset: FC = memo(() => {
     </Section>
   );
 });
-
 
 Skillset.displayName = 'Skill';
 export default Skillset;
