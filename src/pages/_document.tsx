@@ -9,6 +9,20 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* Google tag (gtag.js) */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-QB280N4XKH`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QB280N4XKH', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
         <meta charSet="utf-8" />
         {/* google translate breaks react:
           - https://github.com/facebook/react/issues/11538
