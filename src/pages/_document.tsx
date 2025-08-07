@@ -9,24 +9,22 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* Google tag (gtag.js) */}
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=G-QB280N4XKH`} />
+        {/* Google Analytics script loader */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QB280N4XKH"></script>
+
+        {/* Inline config using dangerouslySetInnerHTML to avoid TS errors */}
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-QB280N4XKH', {
-                page_path: window.location.pathname,
-              });
+              gtag('config', 'G-QB280N4XKH');
             `,
           }}
         />
+
         <meta charSet="utf-8" />
-        {/* google translate breaks react:
-          - https://github.com/facebook/react/issues/11538
-          - https://bugs.chromium.org/p/chromium/issues/detail?id=872770 */}
         <meta content="notranslate" name="google" />
       </Head>
       <body className="bg-black">
